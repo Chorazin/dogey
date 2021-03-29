@@ -32,12 +32,15 @@ if ( function_exists( 'wp_body_open' ) ) {
 					'menu' => 'main_nav_links',
 					'container' => '',
 					'theme_location' => 'primary_menu',
-					'items_wrap' => '<ul id="" class="custom_classes_go_in_here">%3$s</ul>'
+					'items_wrap' => '<ul id="" class="font-bold flex items-stretch main_nav">%3$s</ul>'
 				)
 			);
 		?>
 	</nav>
 </div>
 	<header>
+		<div>
+
+		</div>
 		Header content here
 	</header>
