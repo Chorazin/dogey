@@ -8,7 +8,7 @@
 
 
 <footer>
-	Footer content here
+	Footer content here please
 </footer>
 <?php wp_footer(); ?>
 </body>
