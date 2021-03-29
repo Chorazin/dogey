@@ -4,7 +4,7 @@
  <article>
    <!-- cards go in here -->
    <div>
-     <img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/sandler_v001.jpg" alt="Adam sandler">
+     POSTS HERE
      <div>
        <span class="text-red-600">
          Joe Blogs
@@ -17,6 +17,7 @@
   <?php
     the_content();
   ?>
+</article>
   <?php
     get_footer();
   ?>

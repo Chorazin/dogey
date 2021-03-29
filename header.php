@@ -38,10 +38,10 @@ if ( function_exists( 'wp_body_open' ) ) {
 			);
 		?>
 	</nav>
-</div>
+
 	<header>
 		<div class='hero'>
-
+			<img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/hero_banner_v001.jpg" alt="Beau the dog">
 		</div>
-		Header content here
 	</header>
+</div>
