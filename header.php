@@ -17,31 +17,44 @@
 	<?php wp_head(); ?>
 </head>
 <body>
-
 <?php
 //setup to execute functions on body opening tag
 if ( function_exists( 'wp_body_open' ) ) {
 	wp_body_open();
 }
 ?>
-<div> <!-- content wrapper for main nav -->
-	<nav class='main_nav bg-black bg-opacity-80 text-white'>
-		<?php
-			//set up nav menu, see functions.php for details
-			wp_nav_menu(
-				array(
-					'menu' => 'main_nav_links',
-					'container' => '',
-					'theme_location' => 'primary_menu',
-					'items_wrap' => '<ul id="" class="font-bold flex items-stretch p-4">%3$s</ul>'
-				)
-			);
-		?>
-	</nav>
-
+	<div class=''> <!-- content wrapper for main nav -->
+		<nav class='main_nav bg-black bg-opacity-80 text-white'>
+			<p id='hamburger' class='md:hidden p-8 hamburger_menu'></p>
+			<?php
+				//set up nav menu, see functions.php for details
+				wp_nav_menu(
+					array(
+						'menu' => 'main_nav_links',
+						'container' => '',
+						'theme_location' => 'primary_menu',
+						'items_wrap' => '<ul id="mobile_menu" class="font-bold flex p-5 hidden md:flex md:flex-row">%3$s</ul>'
+					)
+				);
+			?>
+			<div class='md:invisible'>
+				<!-- hidden menu on large screens -->
+				<?php
+					//set up nav menu, see functions.php for details
+					wp_nav_menu(
+						array(
+							'menu' => 'main_nav_links',
+							'container' => '',
+							'theme_location' => 'primary_menu',
+							'items_wrap' => '<ul id="mobile_menu" class="font-bold flex p-5 hidden md:flex md:flex-row">%3$s</ul>'
+						)
+					);
+				?>
+			</div>
+		</nav>
+	</div>
 	<header>
 		<div class='hero'>
 			<img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/hero_banner_v001.jpg" alt="Beau the dog">
 		</div>
 	</header>
-</div>

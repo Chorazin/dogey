@@ -57,3 +57,28 @@ nav .children li:before {
   width: 100%
   margin: auto;
 }
+
+.active{
+        display: block;
+    }
+
+    .hamburger_menu {
+      padding-left: 1.25em;
+      position: relative;
+    }
+    .hamburger_menu:before {
+      content: "";
+    position: absolute;
+    left: 30;
+    top: 0.21em;
+    bottom: 0.21em;
+    width: 3em;
+    background: linear-gradient(
+      to bottom,
+      black, black 20%,
+      white 20%, white 40%,
+      black 40%, black 60%,
+      white 60%, white 80%,
+      black 80%, black 100%
+    );
+    }
