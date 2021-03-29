@@ -15,6 +15,10 @@ Text Domain: Dogey
 Thanks to Imran Sayed for the setup tips and his webpack skills
 
 */
+body {
+
+}
+
 nav {
   width: 100%;
 }
@@ -22,22 +26,33 @@ nav {
 .main_nav ul	{
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
+
 }
 
 .main_nav ul li	{
 	display: inline-block;
-	padding: 0 6px 0 0;
+	padding: 0 20px 0 0;
+  transition: color 1s;
 }
 
 .main_nav ul li:before {
-	content: "\00c7";
+	content: "\007c";
 	display: inline-block;
-	margin-right: 8px;
+	margin-right: 20px;
 }
 
 .main_nav ul li:first-child:before,
 nav .children li:before {
 	content: "";
 	display: none;
+}
+
+.main_nav ul li:hover {
+  color: red;
+}
+
+.hero {
+  width: 100%
+  margin: auto;
+  height: 600px;
 }
