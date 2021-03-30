@@ -24,7 +24,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 }
 ?>
 	<div class=''> <!-- content wrapper for main nav -->
-		<nav class='main_nav bg-black bg-opacity-80 text-white'>
+		<nav class='main_nav text-white'>
 			<p id='hamburger' class='md:hidden p-8 hamburger_menu'></p>
 			<?php
 				//set up nav menu, see functions.php for details
@@ -46,7 +46,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 							'menu' => 'main_nav_links',
 							'container' => '',
 							'theme_location' => 'primary_menu',
-							'items_wrap' => '<ul id="mobile_menu" class="font-bold flex sm:flex-col p-5">%3$s</ul>'
+							'items_wrap' => '<ul id="mobile_menu" class="font-bold flex flex-col p-5">%3$s</ul>'
 						)
 					);
 				?>
