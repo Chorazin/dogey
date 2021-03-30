@@ -26,34 +26,34 @@ nav {
   background-color: #3b3b3b;
 }
 
-.main_nav ul#test	{
+.main_nav ul#nav_one	{
 	list-style-type: none;
 	margin: 0;
 
 }
 
-.main_nav ul#test li	{
+.main_nav ul#nav_one li	{
 	padding: 0 20px 0 0;
   transition: color 1s;
 }
 
-.main_nav ul#test li:before {
+.main_nav ul#nav_one li:before {
 	content: "\007c";
 	margin-right: 20px;
 }
 
-.main_nav ul#test li:first-child:before,
+.main_nav ul#nav_one li:first-child:before,
 nav .children li:before {
 	content: "";
 	display: none;
 }
 
-.main_nav ul#test li:hover {
+.main_nav ul#nav_one li:hover {
   color: #ecbf4d;
 }
 
 .main_nav ul li:hover {
-  color: #3b3b3b;
+  color: #ecbf4d;
 }
 .main_nav ul li	{
   transition: color 1s;
@@ -71,6 +71,7 @@ nav .children li:before {
 .hamburger_menu {
   padding-left: 1.25em;
   position: relative;
+  width: 15%;
 }
 .hamburger_menu:before {
   content: "";
@@ -91,5 +92,19 @@ background: linear-gradient(
 
 #mobile_menu {
   position: absolute;
+  left: 0px;
+  background-color: #3b3b3b;
+}
 
+#second_nav {
+
+  opacity: 1;
+  animation: fade .20s linear;
+
+}
+
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  100% { opacity: 1 }
 }

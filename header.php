@@ -33,7 +33,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 						'menu' => 'main_nav_links',
 						'container' => '',
 						'theme_location' => 'primary_menu',
-						'items_wrap' => '<ul id="test" class="font-bold sm:hidden hidden flex p-5 md:flex md:flex-row">%3$s</ul>'
+						'items_wrap' => '<ul id="nav_one" class="font-bold sm:hidden hidden flex p-5 md:flex md:flex-row">%3$s</ul>'
 					)
 				);
 			?>
@@ -46,7 +46,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 							'menu' => 'main_nav_links',
 							'container' => '',
 							'theme_location' => 'primary_menu',
-							'items_wrap' => '<ul id="mobile_menu" class="font-bold flex flex-col p-5">%3$s</ul>'
+							'items_wrap' => '<ul id="mobile_menu" class="font-bold flex flex-col p-5 space-y-5">%3$s</ul>'
 						)
 					);
 				?>
