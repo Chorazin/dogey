@@ -25,31 +25,29 @@ nav {
   width: 100%;
 }
 
-.main_nav ul	{
+.main_nav ul#test	{
 	list-style-type: none;
 	margin: 0;
 
 }
 
-.main_nav ul li	{
-	display: inline-block;
+.main_nav ul#test li	{
 	padding: 0 20px 0 0;
   transition: color 1s;
 }
 
-.main_nav ul li:before {
+.main_nav ul#test li:before {
 	content: "\007c";
-	display: inline-block;
 	margin-right: 20px;
 }
 
-.main_nav ul li:first-child:before,
+.main_nav ul#test li:first-child:before,
 nav .children li:before {
 	content: "";
 	display: none;
 }
 
-.main_nav ul li:hover {
+.main_nav ul#test li:hover {
   color: red;
 }
 
@@ -59,26 +57,36 @@ nav .children li:before {
 }
 
 .active{
-        display: block;
-    }
+  display: visible;
+}
 
-    .hamburger_menu {
-      padding-left: 1.25em;
-      position: relative;
-    }
-    .hamburger_menu:before {
-      content: "";
-    position: absolute;
-    left: 30;
-    top: 0.21em;
-    bottom: 0.21em;
-    width: 3em;
-    background: linear-gradient(
-      to bottom,
-      black, black 20%,
-      white 20%, white 40%,
-      black 40%, black 60%,
-      white 60%, white 80%,
-      black 80%, black 100%
-    );
-    }
+.mobile_res {
+  display: none;
+}
+
+.hamburger_menu {
+  padding-left: 1.25em;
+  position: relative;
+}
+.hamburger_menu:before {
+  content: "";
+position: absolute;
+left: 30;
+top: 0.21em;
+bottom: 0.21em;
+width: 3em;
+background: linear-gradient(
+  to bottom,
+  black, black 20%,
+  white 20%, white 40%,
+  black 40%, black 60%,
+  white 60%, white 80%,
+  black 80%, black 100%
+  );
+}
+
+#mobile_menu {
+  position: absolute;
+  top: 90px;
+  left: 30px;
+}

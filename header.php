@@ -33,12 +33,12 @@ if ( function_exists( 'wp_body_open' ) ) {
 						'menu' => 'main_nav_links',
 						'container' => '',
 						'theme_location' => 'primary_menu',
-						'items_wrap' => '<ul id="mobile_menu" class="font-bold flex p-5 hidden md:flex md:flex-row">%3$s</ul>'
+						'items_wrap' => '<ul id="test" class="font-bold sm:hidden hidden flex p-5 md:flex md:flex-row">%3$s</ul>'
 					)
 				);
 			?>
-			<div class='md:invisible'>
-				<!-- hidden menu on large screens -->
+			<div id='second_nav' class='mobile_res'>
+				<!-- hidden menu on large screens to popup once hamburger is clicked -->
 				<?php
 					//set up nav menu, see functions.php for details
 					wp_nav_menu(
@@ -46,7 +46,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 							'menu' => 'main_nav_links',
 							'container' => '',
 							'theme_location' => 'primary_menu',
-							'items_wrap' => '<ul id="mobile_menu" class="font-bold flex p-5 hidden md:flex md:flex-row">%3$s</ul>'
+							'items_wrap' => '<ul id="mobile_menu" class="font-bold flex sm:flex-col p-5">%3$s</ul>'
 						)
 					);
 				?>
