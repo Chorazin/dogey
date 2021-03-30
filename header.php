@@ -8,7 +8,7 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<title>Dogey's</title>
+	<title>The Mobile Groom Room</title>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -37,7 +37,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 					)
 				);
 			?>
-			<div id='second_nav' class='mobile_res'>
+			<div id='second_nav' class='mobile_res '>
 				<!-- hidden menu on large screens to popup once hamburger is clicked -->
 				<?php
 					//set up nav menu, see functions.php for details
