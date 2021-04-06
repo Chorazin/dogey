@@ -1,19 +1,34 @@
 <?php
   get_header();
  ?>
- <article>
+ <article class='text-center'>
    <!-- cards go in here -->
-   <div>
-     POSTS HERE
+
+   <div class='grid lg:grid-cols-3 pt-5 pb-5 posts text-white'>
      <div>
-       <span class="text-red-600">
-         Joe Blogs
-       </span>
-       <span>
-         blah blah blah testimonial
-       </span>
+        POST ONE
+     </div>
+     <div>
+        POST TWO
+     </div>
+     <div>
+        POST THREE
      </div>
    </div>
+
+
+   <div class='grid lg:grid-cols-3 pt-5 pb-5 posts text-white'>
+     <div>
+        TESTIMONIAL ONE
+     </div>
+     <div>
+        TESTIMONIAL TWO
+     </div>
+     <div>
+        TESTIMONIAL THREE
+     </div>
+   </div>
+
   <?php
     the_content();
   ?>

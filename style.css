@@ -15,6 +15,10 @@ Text Domain: Dogey
 Thanks to Imran Sayed for the setup tips and his webpack skills
 
 */
+
+:root {
+  --charcoal: #3b3b3b;
+}
 body {
 
 }
@@ -23,7 +27,7 @@ img {
 }
 nav {
   width: 100%;
-  background-color: #3b3b3b;
+  background-color: var(--charcoal);
 }
 
 .main_nav ul#nav_one	{
@@ -82,18 +86,18 @@ bottom: 0.21em;
 width: 3em;
 background: linear-gradient(
   to bottom,
-  #3b3b3b, #3b3b3b 20%,
+  var(--charcoal), var(--charcoal) 20%,
   white 20%, white 40%,
-  #3b3b3b 40%, #3b3b3b 60%,
+  var(--charcoal) 40%, var(--charcoal) 60%,
   white 60%, white 80%,
-  #3b3b3b 80%, #3b3b3b 100%
+  var(--charcoal) 80%, var(--charcoal) 100%
   );
 }
 
 #mobile_menu {
   position: absolute;
   left: 0px;
-  background-color: #3b3b3b;
+  background-color: var(--charcoal);
 }
 
 #second_nav {
@@ -103,6 +107,9 @@ background: linear-gradient(
 
 }
 
+.posts {
+  background-color: var(--charcoal);
+}
 
 @keyframes fade {
   0%,100% { opacity: 0 }
