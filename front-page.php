@@ -8,19 +8,16 @@
    <!-- tailwind cards go in here for eeach post -->
    <div class='grid lg:grid-cols-3 pt-5 pb-5 posts text-white'>
      <!-- fetch all sticky posts first -->
+     <?php /* $my_query = new WP_Query(array('post_type' => 'post','orderby' => 'date' ,'order' => 'DESC','ignore_sticky_posts' => false 'posts_per_page' => 3)); */ ?>
      <?php $my_query = new WP_Query(array('post__in'=>get_option('sticky_posts')));
-     while ($my_query->have_posts()) : $my_query->the_post();
- 		 if(is_sticky())
- 		 { ?>
+     while ($my_query->have_posts()) : $my_query->the_post(); ?>
+
      <div>
         	<h3><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
           <h4><?php the_time('F jS, Y'); ?> <b>sticky</b><h4>
     			<p><?php the_excerpt(); ?></p>
      </div>
-   <?php }
-   else
-     {
-     } ?>
+
    <?php endwhile; ?>
    <!-- setup a counter for number of posts to be displayed minus sticky posts currently displayed -->
    <?php
@@ -31,7 +28,6 @@
      $final_count = 0;
    }
    ?>
-
   <!---------------------------------------------------------------------------------------------------->
 
   <!-- now fetch me all the posts excluding sticky posts which have already been displayed -->
