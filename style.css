@@ -18,9 +18,10 @@ Thanks to Imran Sayed for the setup tips and his webpack skills
 
 :root {
   --charcoal: #3b3b3b;
+  --dogey_orange: #ecbf4d;
 }
 body {
-
+  background-color: var(--charcoal);
 }
 img {
   vertical-align: none;
@@ -107,11 +108,61 @@ background: linear-gradient(
 
 }
 
-.posts {
+article {
   background-color: var(--charcoal);
 }
+.posts {
+  background-color: var(--charcoal);
+  margin-top: 50px;
+}
+
+.animate_card {
+  background-color: var(--charcoal);
+  color: white;
+  animation-name: color_transition;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+
 
 @keyframes fade {
   0%,100% { opacity: 0 }
   100% { opacity: 1 }
+}
+
+.inner_card {
+  max-width: 500px;
+  margin:auto;
+}
+
+
+@keyframes color_transition {
+  from {
+    background-color: var(--charcoal);
+    color: white;
+  }
+  to {
+    background-color: var(--dogey_orange);
+    color: var(--charcoal);
+  }
+}
+
+.animate_card_out {
+  background-color: var(--dogey_orange);
+  color: var(--charcoal);
+  animation-name: color_transition_out;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes color_transition_out {
+  from {
+    background-color: var(--dogey_orange);
+    color: var(--charcoal);
+  }
+  to {
+    background-color: var(--charcoal);
+    color: white;
+  }
 }
