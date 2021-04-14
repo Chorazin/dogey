@@ -8,10 +8,13 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<title>The Mobile Groom Room</title>
+	<title>The Mobile Groom Room - Dog Grooming Service</title>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="A premium mobile dog grooming service for Newcastle and the Central Coast NSW. Contact us today for dog grooming services in the Hunter Valley">
+	<meta name=”robots” content=”index, follow”>
+
 	<!-- cutom styles directory -->
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css" type="text/css" media="screen" />
 	<?php wp_head(); ?>

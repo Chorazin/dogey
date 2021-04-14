@@ -19,6 +19,7 @@ Thanks to Imran Sayed for the setup tips and his webpack skills
 :root {
   --charcoal: #3b3b3b;
   --dogey_orange: #ecbf4d;
+  --dark_charcoal: #232323;
 }
 body {
   background-color: var(--charcoal);
@@ -117,40 +118,47 @@ article {
 }
 
 .animate_card {
-  background-color: var(--charcoal);
+  background-color: var(--dark_charcoal);
   color: white;
   animation-name: color_transition;
   animation-duration: .5s;
   animation-fill-mode: forwards;
 }
 
-
-
 @keyframes fade {
   0%,100% { opacity: 0 }
   100% { opacity: 1 }
 }
 
+@keyframes fade_2 {
+  0%,100% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+@keyframes fade_out {
+  100%,0% { opacity: 1 }
+  0% { opacity: 0 }
+}
+
 .inner_card {
-  max-width: 500px;
   margin:auto;
 }
 
 
 @keyframes color_transition {
   from {
-    background-color: var(--charcoal);
+    background-color: var(--dark_charcoal);
     color: white;
   }
   to {
     background-color: var(--dogey_orange);
-    color: var(--charcoal);
+    color: var(--dark_charcoal);
   }
 }
 
 .animate_card_out {
   background-color: var(--dogey_orange);
-  color: var(--charcoal);
+  color: var(--dark_charcoal);
   animation-name: color_transition_out;
   animation-duration: .5s;
   animation-fill-mode: forwards;
@@ -159,10 +167,33 @@ article {
 @keyframes color_transition_out {
   from {
     background-color: var(--dogey_orange);
-    color: var(--charcoal);
+    color: var(--dark_charcoal);
   }
   to {
-    background-color: var(--charcoal);
+    background-color: var(--dark_charcoal);
     color: white;
   }
+}
+
+.b_icon {
+  width: 75%;
+  height: auto;
+  margin-top: 5px;
+  margin-left: auto;
+}
+
+.b_icon_animate {
+  animation-name: fade_2;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+.b_icon_animate_out {
+  animation-name: fade_out;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+.card {
+  background-color: #232323;
 }
