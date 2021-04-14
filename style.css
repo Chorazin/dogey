@@ -115,6 +115,7 @@ article {
 .posts {
   background-color: var(--charcoal);
   margin-top: 50px;
+  min-height: 300px;
 }
 
 .animate_card {
@@ -123,37 +124,34 @@ article {
   animation-name: color_transition;
   animation-duration: .5s;
   animation-fill-mode: forwards;
-}
 
-@keyframes fade {
-  0%,100% { opacity: 0 }
-  100% { opacity: 1 }
-}
-
-@keyframes fade_2 {
-  0%,100% { opacity: 0 }
-  100% { opacity: 1 }
-}
-
-@keyframes fade_out {
-  100%,0% { opacity: 1 }
-  0% { opacity: 0 }
 }
 
 .inner_card {
   margin:auto;
 }
 
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px;
+  border-style: solid;
+  border-color: white;
+  margin: 1em 0;
+  padding: 0;
+  }
 
-@keyframes color_transition {
-  from {
-    background-color: var(--dark_charcoal);
-    color: white;
-  }
-  to {
-    background-color: var(--dogey_orange);
-    color: var(--dark_charcoal);
-  }
+.animate_hr {
+  animation-name: hr_transition;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+.animate_hr_out {
+  animation-name: hr_transition_out;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
 }
 
 .animate_card_out {
@@ -162,17 +160,6 @@ article {
   animation-name: color_transition_out;
   animation-duration: .5s;
   animation-fill-mode: forwards;
-}
-
-@keyframes color_transition_out {
-  from {
-    background-color: var(--dogey_orange);
-    color: var(--dark_charcoal);
-  }
-  to {
-    background-color: var(--dark_charcoal);
-    color: white;
-  }
 }
 
 .b_icon {
@@ -195,4 +182,60 @@ article {
 
 .card {
   background-color: #232323;
+}
+/* ------------------------------------------------------------ */
+/* ANIMATIONS */
+@keyframes color_transition_out {
+  from {
+    background-color: var(--dogey_orange);
+    color: var(--dark_charcoal);
+  }
+  to {
+    background-color: var(--dark_charcoal);
+    color: white;
+  }
+}
+
+@keyframes hr_transition {
+  from {
+    border-color: white;
+  }
+  to {
+    border-color: var(--dark_charcoal);
+  }
+}
+
+@keyframes hr_transition_out {
+  from {
+    border-color: var(--dark_charcoal);
+  }
+  to {
+    border-color: white;
+  }
+}
+
+@keyframes color_transition {
+  from {
+    background-color: var(--dark_charcoal);
+    color: white;
+  }
+  to {
+    background-color: var(--dogey_orange);
+    color: var(--dark_charcoal);
+  }
+}
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+@keyframes fade_2 {
+  0%,100% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+@keyframes fade_out {
+  100%,0% { opacity: 1 }
+  0% { opacity: 0 }
 }
