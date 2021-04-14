@@ -11,12 +11,13 @@
      <?php /* $my_query = new WP_Query(array('post_type' => 'post','orderby' => 'date' ,'order' => 'DESC','ignore_sticky_posts' => false 'posts_per_page' => 3)); */ ?>
      <?php $my_query = new WP_Query(array('post__in'=>get_option('sticky_posts')));
      while ($my_query->have_posts()) : $my_query->the_post(); ?>
-     <div class='rounded-md content-center shadow-md md:mb-8 card' id='test'>
-       <div class='inner_card text-left ml-4 mr-4 flex justify-between'>
+     <div class='rounded-md content-center shadow-md mb-8 card pr-5 pl-5' id='test'>
+       <div class='inner_card text-left  flex justify-between'>
         <span class='font-bold text-2xl'><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></span>
-        <span><img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/book_v002.png" alt="Open book Icon" class='b_icon'></span>
+        <span><a href="<?php echo get_permalink(); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/book_v002.png" alt="Open book Icon" class='b_icon mt-3'></a></span>
      </div>
-     <span class='text-xs block text-left ml-4'><?php the_time('F jS, Y'); ?> <b>sticky</b></span>
+     <span class='text-xs block text-left '><?php the_time('F jS, Y'); ?> <b>sticky</b></span>
+     <hr />
      <p><?php the_excerpt(); ?></p>
      </div>
    <?php endwhile; ?>
@@ -35,12 +36,13 @@
   <!-- THE LOOP! -->
   <?php $my_query_2 = new WP_Query(array( 'post__not_in' => get_option( 'sticky_posts' ), 'posts_per_page'=> $final_count));
   while ($my_query_2->have_posts()) : $my_query_2->the_post(); ?>
-  <div class='rounded-md content-center shadow-md md:mb-8 card'>
-    <div class='inner_card text-left ml-4 mr-4 flex justify-between'>
+  <div class='rounded-md content-center shadow-md mb-8 card pr-5 pl-5'>
+    <div class='inner_card text-left  flex justify-between'>
     <span class='font-bold text-2xl'><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></span>
-    <span><img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/book_v002.png" alt="Open book Icon" class='b_icon'></span>
+    <span><a href="<?php echo get_permalink(); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/book_v002.png" alt="Open book Icon" class='b_icon mt-3'></a></span>
   </div>
-    <span class='text-xs block text-left ml-4'><?php the_time('F jS, Y'); ?></span>
+    <span class='text-xs block text-left '><?php the_time('F jS, Y'); ?></span>
+    <hr />
     <p><?php the_excerpt(); ?></p>
 
   </div>

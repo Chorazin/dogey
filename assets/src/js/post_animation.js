@@ -1,47 +1,25 @@
+//fetch the nodelists required
 let post_cards = document.querySelectorAll('div.card');
-let post_card = document.querySelector('#test');
-// let book_icon = document.querySelector('#b_icon');
+let book_icons = document.querySelectorAll('img.b_icon');
 
+//setup foreach to iterate through post_cards taking in an index for the second nodelist book_icons
+post_cards.forEach((card, index) => {
+  //set icon to the current index of the forEach loop
+  const icon = book_icons[index]
 
-console.log(post_cards);
+  card.addEventListener('mouseover', () => {
+    card.classList.add('animate_card');
+    card.classList.remove('animate_card_out');
+    icon.classList.add('b_icon_animate');
+    icon.classList.remove('b_icon_animate_out');
+    icon.src = `${template_url}/assets/src/imgs/book_v003.png`;
+  })
 
-post_cards.forEach((item) => {
-  item.addEventListener('mouseover', () => {
-    item.classList.add('animate_card');
-    //item.classList.add('b_icon_animate');
-    item.classList.remove('animate_card_out');
-    //item.classList.remove('b_icon_animate_out');
-  //  book_icon.src = `${template_url}/assets/src/imgs/book_v003.png`;
-
-
+  card.addEventListener('mouseleave', () => {
+    card.classList.add('animate_card_out');
+    card.classList.remove('animate_card');
+    icon.classList.remove('b_icon_animate');
+    icon.classList.add('b_icon_animate_out');
+    icon.src = `${template_url}/assets/src/imgs/book_v002.png`;
   })
 })
-
-post_cards.forEach((item) => {
-  item.addEventListener('mouseleave', () => {
-    item.classList.add('animate_card_out');
-    //item.classList.add('b_icon_animate_out');
-    item.classList.remove('animate_card');
-    //item.classList.remove('b_icon_animate');
-  //  book_icon.src = `${template_url}/assets/src/imgs/book_v002.png`;
-  })
-})
-
-
-/*
-post_card.addEventListener('mouseover', () => {
-  post_card.classList.add('animate_card');
-  post_card.classList.remove('animate_card_out');
-  book_icon.src = `${template_url}/assets/src/imgs/book_v003.png`;
-  book_icon.classList.add('b_icon_animate');
-  book_icon.classList.remove('b_icon_animate_out');
-})
-
-post_card.addEventListener('mouseleave', () => {
-  post_card.classList.add('animate_card_out');
-  post_card.classList.remove('animate_card');
-  book_icon.src = `${template_url}/assets/src/imgs/book_v002.png`;
-  book_icon.classList.add('b_icon_animate_out');
-  book_icon.classList.remove('b_icon_animate');
-})
-*/
