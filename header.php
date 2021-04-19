@@ -24,8 +24,7 @@
 	</script>
 </head>
 <body>
-	<div id="fb-root"></div>
-	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="A1ciisDE"></script>
+
 <?php
 //setup to execute functions on body opening tag
 if ( function_exists( 'wp_body_open' ) ) {
