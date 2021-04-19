@@ -11,7 +11,7 @@
      <?php $my_query = new WP_Query(array('post__in'=>get_option('sticky_posts')));
      while ($my_query->have_posts()) : $my_query->the_post(); ?>
      <div class='rounded-md content-center shadow-lg mb-8 card pr-5 pl-5' id='test'>
-       <div class='inner_card text-left  flex justify-between'>
+       <div class='inner_card text-left flex justify-between'>
         <span class='font-bold text-2xl'><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></span>
         <span><a href="<?php echo get_permalink(); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/book_v002.png" alt="Open book Icon" class='b_icon mt-3'></a></span>
      </div>
@@ -49,8 +49,8 @@
  </div>
   <!--Spacer Image -->
 
-   <div class="cont mt-10">
-     <div class="spacer_card">
+   <div class="grid grid-cols-1">
+     <div class="spacer_card flex justify-center">
        <div class="paw text-white">
          <div class="circle"></div>
          <img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/paw_v001.png" alt="animated dogs paw">
