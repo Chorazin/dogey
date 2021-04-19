@@ -20,12 +20,12 @@ Thanks to Imran Sayed for the setup tips and his webpack skills
   --charcoal: #3b3b3b;
   --dogey_orange: #ecbf4d;
   --dark_charcoal: #232323;
+  --dogey_pink: #e1b2ba;
 }
 body {
   background-color: var(--charcoal);
 }
 img {
-
 
 }
 nav {
@@ -187,12 +187,46 @@ hr {
 }
 
 .card:hover { transform: scale(1.1); }
+.paw {
+  width: 30rem;
+  min-height: 45vh;
+  background-color: var(--dark_charcoal);
+  margin: auto;
+  border-radius: 30px;
+  padding: 0rem 5rem;
+  box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2)
 
-.circle img {
-  max-width: 100%
+}
+.paw img{
+  max-width: 287px;
   width: 100%;
   height: auto;
+  margin: auto;
+  z-index:2;
+  position: relative;
+  padding-top: 5rem;
 }
+
+.spacer_card {
+  width: 50%;
+  background-color: var(--charcoal);
+  margin: auto;
+}
+
+.circle {
+  width: 15rem;
+  height: 15rem;
+  background: linear-gradient(
+    to right,
+    var(--dogey_orange), var(--dogey_pink)
+    );
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+  margin-left: 2.75rem;
+  margin-top: 5rem;
+}
+
 /* ------------------------------------------------------------ */
 /* ANIMATIONS */
 @keyframes color_transition_out {

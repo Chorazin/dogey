@@ -17,7 +17,7 @@
      </div>
      <span class='text-xs block text-left '><?php the_time('F jS, Y'); ?> <b>sticky</b></span>
      <hr />
-     <p class='mt-5'><a href="<?php echo get_permalink(); ?>"><?php the_excerpt(); ?></a></p>
+     <p class='mt-10'><a href="<?php echo get_permalink(); ?>"><?php the_excerpt(); ?></a></p>
      </div>
    <?php endwhile; ?>
    <!-- setup a counter for number of posts to be displayed minus sticky posts currently displayed -->
@@ -36,24 +36,32 @@
   <?php $my_query_2 = new WP_Query(array( 'post__not_in' => get_option( 'sticky_posts' ), 'posts_per_page'=> $final_count));
   while ($my_query_2->have_posts()) : $my_query_2->the_post(); ?>
   <div class='rounded-md content-center shadow-lg mb-8 card pr-5 pl-5'>
-    <div class='inner_card text-left  flex justify-between'>
-    <span class='font-bold text-2xl pers'><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></span>
+    <div class='inner_card text-left flex justify-between'>
+    <span class='font-bold text-2xl'><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></span>
     <span><a href="<?php echo get_permalink(); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/book_v002.png" alt="Open book Icon" class='b_icon mt-3'></a></span>
   </div>
     <span class='text-xs block text-left '><?php the_time('F jS, Y'); ?></span>
     <hr />
-    <p class='mt-5'><a href="<?php echo get_permalink(); ?>"><?php the_excerpt(); ?></a></p>
+    <p class='mt-10'><a href="<?php echo get_permalink(); ?>"><?php the_excerpt(); ?></a></p>
   </div>
   <?php endwhile; ?>
   <!---------------------------------------------------------------------------------------------------->
  </div>
   <!--Spacer Image -->
 
-   <div class="container_1 content-center">
+   <div class="cont mt-10">
      <div class="spacer_card">
-       <div class="paw">
+       <div class="paw text-white">
          <div class="circle"></div>
          <img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/paw_v001.png" alt="animated dogs paw">
+         <div class="info">
+           <h1>WHAT WE OFFER</h1>
+           <h3>A boutique mobile grooming service</h3>
+           <button>option 1</button>
+           <button>option 1</button>
+           <button>option 1</button>
+           <button>option 1</button>
+         </div>
        </div>
      </div>
    </div>
