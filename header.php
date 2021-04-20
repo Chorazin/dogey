@@ -17,8 +17,8 @@
 
 	<!-- cutom styles directory -->
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css" type="text/css" media="screen" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<?php wp_head(); ?>
-
 	<script type="text/javascript">
 		const template_url = '<?= get_bloginfo("template_url"); ?>';
 	</script>

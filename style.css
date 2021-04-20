@@ -32,7 +32,9 @@ nav {
   width: 100%;
   background-color: var(--charcoal);
 }
-
+footer {
+  background-color: var(--dark_charcoal);
+}
 .main_nav ul#nav_one	{
 	list-style-type: none;
 	margin: 0;
@@ -104,10 +106,8 @@ background: linear-gradient(
 }
 
 #second_nav {
-
   opacity: 1;
   animation: fade .20s linear;
-
 }
 
 article {
@@ -125,9 +125,9 @@ article {
   animation-name: color_transition;
   animation-duration: .5s;
   animation-fill-mode: forwards;
-
 }
 
+}
 .inner_card {
   margin:auto;
 }
@@ -154,7 +154,10 @@ hr {
   animation-duration: .5s;
   animation-fill-mode: forwards;
 }
-
+.post_testimonials {
+  background: linear-gradient(var(--dogey_orange), var(--dark_charcoal));
+  min-height: 300px;
+}
 .animate_card_out {
   background-color: var(--dogey_orange);
   color: var(--dark_charcoal);
@@ -185,10 +188,10 @@ hr {
   background-color: #232323;
   transition: all .2s ease-in-out;
 }
-
 .card:hover { transform: scale(1.1); }
+
 .paw {
-  width: 30rem;
+  max-width: 40rem;
   min-height: 45vh;
   background-color: var(--dark_charcoal);
   margin: auto;
@@ -216,16 +219,22 @@ hr {
 .circle {
   width: 15rem;
   height: 15rem;
+  border-radius: 50%;
   background: linear-gradient(
     to right,
     var(--dogey_orange), var(--dogey_pink)
     );
-  border-radius: 50%;
   z-index: 1;
   position: absolute;
-  margin-left: 2.75rem;
   margin-top: 5rem;
+  margin-left: 2.75rem;
 }
+
+
+
+
+
+
 
 /* ------------------------------------------------------------ */
 /* ANIMATIONS */

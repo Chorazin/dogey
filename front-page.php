@@ -1,7 +1,7 @@
 <?php
   get_header();
  ?>
- <article class='text-center'>
+ <article class='container mx-auto'>
    <!---------------------------------------------------------------------------------------------------->
    <!-- THE LOOP! -->
    <!-- fetch the latest 3 main articles for display on the front page -->
@@ -10,6 +10,7 @@
      <!-- fetch all sticky posts first -->
      <?php $my_query = new WP_Query(array('post__in'=>get_option('sticky_posts')));
      while ($my_query->have_posts()) : $my_query->the_post(); ?>
+     
      <div class='rounded-md content-center shadow-lg mb-8 card pr-5 pl-5' id='test'>
        <div class='inner_card text-left flex justify-between'>
         <span class='font-bold text-2xl'><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></span>
@@ -48,25 +49,26 @@
   <!---------------------------------------------------------------------------------------------------->
  </div>
   <!--Spacer Image -->
-
-   <div class="grid grid-cols-1">
-     <div class="spacer_card flex justify-center">
+  <hr />
+   <div class="grid grid-cols-1 mt-10">
+     <div class="spacer_card">
        <div class="paw text-white">
          <div class="circle"></div>
          <img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/paw_v001.png" alt="animated dogs paw">
-         <div class="info">
-           <h1>WHAT WE OFFER</h1>
-           <h3>A boutique mobile grooming service</h3>
-           <button>option 1</button>
-           <button>option 1</button>
-           <button>option 1</button>
-           <button>option 1</button>
+         <h1 class='mt-5 font-bold'>WHAT WE OFFER</h1>
+         <div class="info grid lg:grid-cols-4 gap-x-2">
+           <button class='transition duration-500 ease-in-out bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-5'>option 1</button>
+           <button class='transition duration-500 ease-in-out bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-5'>option 1</button>
+           <button class='transition duration-500 ease-in-out bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-5'>option 1</button>
+           <button class='transition duration-500 ease-in-out bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-5'>option 1</button>
          </div>
+          <h3 class='text-xs mt-5'>THE MOBILE GROOM ROOM - A boutique mobile grooming service</h3>
        </div>
+
      </div>
    </div>
-
-   <div class='grid lg:grid-cols-3 pt-5 pb-5 posts text-white'>
+ </article>
+   <div class='grid lg:grid-cols-3 pt-5 pb-5 post_testimonials text-white mt-10'>
      <div>
       Absolutely amazing work! Our first cut for our girls Pippa & Bella and they are beautiful! Look forward to their next appointment - Cameron Massey
      </div>
@@ -77,7 +79,7 @@
         TESTIMONIAL THREE
      </div>
    </div>
-</article>
+
   <?php
     get_footer();
   ?>
