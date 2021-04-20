@@ -18,9 +18,11 @@
 	<!-- cutom styles directory -->
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css" type="text/css" media="screen" />
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="<?php bloginfo('template_url'); ?>/assets/src/js/get_permalink.js"></script>
 	<?php wp_head(); ?>
 	<script type="text/javascript">
 		const template_url = '<?= get_bloginfo("template_url"); ?>';
+		let count_j = 0;
 	</script>
 </head>
 <body>

@@ -30,10 +30,7 @@ post_cards.forEach((card, index) => {
     icon.src = `${template_url}/assets/src/imgs/book_v002.png`;
   })
 
-  card.addEventListener('mouseclick', () => {
-    
-  })
-})
 
+})
 
 //setup for card animations
