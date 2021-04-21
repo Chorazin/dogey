@@ -57,8 +57,35 @@
   <?php endwhile; ?>
   <!---------------------------------------------------------------------------------------------------->
  </div>
-  <!--Spacer Image -->
+
   <hr />
+  <br />
+  <div class='grid lg:grid-cols-2'>
+    <div>
+      <span><img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/paw_v002.png" alt="Open book Icon" class=''></span>
+      <span class="mgr">THE MOBILE GROOM ROOM</span>
+    </div>
+    <div>
+    Hello visitors, My name is Emma, I started as a trainee at age 20 in boutique northern beaches salons. And have worked in different boutique grooming salons around Sydney. I successfully worked for myself out of one of Sydney's biggest vet clinics for several years.
+
+    Some of my claims to fame are I have groomed Tony Abbotts and Juanita Phillips (abc news) dogs before
+
+    I have been trained by and worked alongside some of Australia's best dog groomers
+
+    I now am bringing my years of knowledge, training and experience into the Mobile dog grooming world in Newcastle.
+
+    I believe there is a need for high quality Mobile groomers in Newcastle area
+
+    No more noisy salons, waiting for pickups and drop off or overwhelming smells. Let your dog enjoy a 1 on 1 grooming session that is all about them while feeling relaxed in their own home environment. My little groom room lets me bring the salon to your front door
+
+    We have a fully enclosed trailer, that is air conditioned with heater water tank
+
+    I am full licensed and insured
+    </div>
+  </div>
+
+  <hr />
+  <!--Spacer Image -->
    <div class="grid grid-cols-1 mt-10">
      <div class="spacer_card">
        <div class="paw text-white">

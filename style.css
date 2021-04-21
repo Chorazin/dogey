@@ -15,6 +15,11 @@ Text Domain: Dogey
 Thanks to Imran Sayed for the setup tips and his webpack skills
 
 */
+@font-face {
+  font-family: bright_sunshine;
+  src: url('./assets/font/Bright Sunshine Cap Demo.ttf');
+
+}
 
 :root {
   --charcoal: #3b3b3b;
@@ -228,6 +233,11 @@ hr {
   position: absolute;
   margin-top: 5rem;
   margin-left: 2.75rem;
+}
+
+.mgr {
+  font-family: bright_sunshine;
+  font-size: 2rem;
 }
 
 
