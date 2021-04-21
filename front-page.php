@@ -60,27 +60,31 @@
 
   <hr />
   <br />
-  <div class='grid lg:grid-cols-2'>
+  <div class='grid lg:grid-cols-3  text-white'>
     <div>
-      <span><img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/paw_v002.png" alt="Open book Icon" class=''></span>
-      <span class="mgr">THE MOBILE GROOM ROOM</span>
+      <span class="mgr">THE MOBILE</span>
+      <span><img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/paw_v002.png" alt="Mobile Groom Room logo" class=''></span>
+      <span class="mgr">GROOM ROOM</span>
+    </div>
+    <div class='lg:col-start-2 lg:col-span-2'>
+      Hello visitors, My name is Emma, I started as a trainee at age 20 in boutique northern beaches salons. And have worked in different boutique grooming salons around Sydney. I successfully worked for myself out of one of Sydney's biggest vet clinics for several years.
+
+      Some of my claims to fame are I have groomed Tony Abbotts and Juanita Phillips (abc news) dogs before
+
+      I have been trained by and worked alongside some of Australia's best dog groomers
+
+      I now am bringing my years of knowledge, training and experience into the Mobile dog grooming world in Newcastle.
+
+      I believe there is a need for high quality Mobile groomers in Newcastle area
+
+      No more noisy salons, waiting for pickups and drop off or overwhelming smells. Let your dog enjoy a 1 on 1 grooming session that is all about them while feeling relaxed in their own home environment. My little groom room lets me bring the salon to your front door
+
+      We have a fully enclosed trailer, that is air conditioned with heater water tank
+
+      I am full licensed and insured
     </div>
     <div>
-    Hello visitors, My name is Emma, I started as a trainee at age 20 in boutique northern beaches salons. And have worked in different boutique grooming salons around Sydney. I successfully worked for myself out of one of Sydney's biggest vet clinics for several years.
 
-    Some of my claims to fame are I have groomed Tony Abbotts and Juanita Phillips (abc news) dogs before
-
-    I have been trained by and worked alongside some of Australia's best dog groomers
-
-    I now am bringing my years of knowledge, training and experience into the Mobile dog grooming world in Newcastle.
-
-    I believe there is a need for high quality Mobile groomers in Newcastle area
-
-    No more noisy salons, waiting for pickups and drop off or overwhelming smells. Let your dog enjoy a 1 on 1 grooming session that is all about them while feeling relaxed in their own home environment. My little groom room lets me bring the salon to your front door
-
-    We have a fully enclosed trailer, that is air conditioned with heater water tank
-
-    I am full licensed and insured
     </div>
   </div>
 

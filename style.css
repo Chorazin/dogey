@@ -160,7 +160,8 @@ hr {
   animation-fill-mode: forwards;
 }
 .post_testimonials {
-  background: linear-gradient(var(--dogey_orange), var(--dark_charcoal));
+  /*background: linear-gradient(var(--dogey_orange), var(--dark_charcoal));*/
+  background-color: var(--dogey_orange);
   min-height: 300px;
 }
 .animate_card_out {
@@ -238,6 +239,8 @@ hr {
 .mgr {
   font-family: bright_sunshine;
   font-size: 2rem;
+  opacity: 0;
+	animation: fade_in_down 1s ease-in both;
 }
 
 
@@ -248,6 +251,17 @@ hr {
 
 /* ------------------------------------------------------------ */
 /* ANIMATIONS */
+@keyframes fade_in_down {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
 @keyframes color_transition_out {
   from {
     background-color: var(--dogey_orange);
