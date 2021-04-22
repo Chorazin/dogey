@@ -193,6 +193,7 @@ hr {
 .card {
   background-color: #232323;
   transition: all .2s ease-in-out;
+  position: relative;
 }
 .card:hover { transform: scale(1.1); }
 
@@ -240,25 +241,60 @@ hr {
   font-family: bright_sunshine;
   font-size: 2rem;
   opacity: 0;
-	animation: fade_in_down 1s ease-in both;
+  position: relative;
+  padding-left: 35px;
+}
+.obs {
+  /*specifically for the intersection observer*/
+}
+.post_paws {
+  position: absolute;
+  bottom: 10px;
+  transform: rotate(30deg);
 }
 
+.scale_rotate_paw {
+  display: block;
+  max-width:40px;
+  max-height:40px;
+  width: auto;
+  height: auto;
+}
 
+.font_adjust {
+    font-family: bright_sunshine;
+}
 
+.boutique {
+  display: block;
+  position: relative;
+}
 
+.assoc_1 {
 
+}
 
+.assoc_2 {
+  padding-left: 150px;
+}
+
+.assoc_3 {
+  padding-left: 250px;
+}
 
 /* ------------------------------------------------------------ */
 /* ANIMATIONS */
 @keyframes fade_in_down {
+
 	from {
 		opacity: 0;
-		transform: translate3d(0, -20%, 0);
+    top: -30px;
+
 	}
 	to {
 		opacity: 1;
-		transform: translate3d(0, 0, 0);
+    top: 0px;
+
 	}
 }
 

@@ -3,7 +3,7 @@
  ?>
  <article>
   <div>
-    <h2 class="text-8xl text-purple-600">
+    <h2 class="text-8xl">
       Main Content on single pages
     </h2>
   </div>
