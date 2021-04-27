@@ -6,13 +6,18 @@ let options = {
 
 //grab what is to be observed
 const target = document.querySelectorAll('.obs');
+const animation_array = [0, 0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2]
+
 
 //setup the observer
 observer = new IntersectionObserver((entries, options) => {
   //add and remove animation as the observer intersects with the elements, in this case the viewport
   entries.forEach((entry) => {
+    let random_number = Math.floor(Math.random() * 8) + 1;
+    let array_number = animation_array[random_number]
     if(entry.intersectionRatio > 0) {
-      entry.target.style.animation = `fade_in_down 1s forwards ease-out`;
+
+      entry.target.style.animation = `fade_in_down ${array_number}s forwards ease-out`;
     }
     else {
       entry.target.style.animation = 'none';
@@ -20,7 +25,7 @@ observer = new IntersectionObserver((entries, options) => {
   })
 
 })
-//observe all span.mgr's
+//observe all .obs
 target.forEach((targ) => {
   observer.observe(targ);
 })

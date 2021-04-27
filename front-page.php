@@ -19,7 +19,7 @@
          <span class='font-bold text-2xl'><?php the_title(); ?></span>
          <span><img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/book_v002.png" alt="Open book Icon" class='b_icon mt-3'></span>
        </div>
-       <span class='text-xs block text-left '><?php the_time('F jS, Y'); ?> <b>sticky</b></span>
+       <span class='text-xs block text-left'><?php the_time('F jS, Y'); ?> <b>sticky</b></span>
        <hr />
        <p class='mt-10'><?php the_excerpt(); ?></p>
        <div class='post_paws'>
@@ -103,7 +103,8 @@
      </div>
    </div>
  </article>
-   <div class='grid lg:grid-cols-3 pt-5 pb-5 post_testimonials text-white mt-10'>
+  <!-------------------------------------------------------------------------------------------------->
+   <div class='grid lg:grid-cols-3 pt-5 pb-5 post_testimonials mt-10'>
      <div>
       Absolutely amazing work! Our first cut for our girls Pippa & Bella and they are beautiful! Look forward to their next appointment - Cameron Massey
      </div>
