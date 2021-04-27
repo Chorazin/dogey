@@ -12,8 +12,8 @@ function add_click(perma, counter) {
       window.location = perma
     })
   }
-  else {
-    let card_three = document.querySelector(`div.posts div:nth-child(${counter +2})`);
+  else if(counter == 3){
+    let card_three = document.querySelector(`div.posts`).getElementsByTagName('div')[counter +5];
     card_three.addEventListener('click', () => {
       window.location = perma
     })

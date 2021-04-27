@@ -39,6 +39,7 @@ nav {
 }
 footer {
   background-color: var(--dark_charcoal);
+  min-height: 300px;
 }
 .main_nav ul#nav_one	{
 	list-style-type: none;
@@ -163,6 +164,7 @@ hr {
   /*background: linear-gradient(var(--dogey_orange), var(--dark_charcoal));*/
   background-color: var(--dogey_orange);
   min-height: 300px;
+  color: var(--dark_charcoal);
 }
 .animate_card_out {
   background-color: var(--dogey_orange);
@@ -243,6 +245,7 @@ hr {
   opacity: 0;
   position: relative;
   padding-left: 35px;
+  color: var(--dogey_orange);
 }
 .obs {
   /*specifically for the intersection observer*/
@@ -263,15 +266,12 @@ hr {
 
 .font_adjust {
     font-family: bright_sunshine;
+    color: var(--dogey_orange);
 }
 
 .boutique {
   display: block;
   position: relative;
-}
-
-.assoc_1 {
-
 }
 
 .assoc_2 {
@@ -281,6 +281,8 @@ hr {
 .assoc_3 {
   padding-left: 250px;
 }
+
+
 
 /* ------------------------------------------------------------ */
 /* ANIMATIONS */

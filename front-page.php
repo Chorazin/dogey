@@ -21,7 +21,7 @@
        </div>
        <span class='text-xs block text-left'><?php the_time('F jS, Y'); ?> <b>sticky</b></span>
        <hr />
-       <p class='mt-10'><?php the_excerpt(); ?></p>
+       <div class='mt-10 mb-10 pb-10'><?php the_excerpt(); ?></div>
        <div class='post_paws'>
          <span><img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/paw_v001.png" alt="tiny dogs paw" class='scale_rotate_paw'></span>
        </div>
@@ -54,7 +54,7 @@
   </div>
     <span class='text-xs block text-left '><?php the_time('F jS, Y'); ?></span>
     <hr />
-    <p class='mt-10'><?php the_excerpt(); ?></p>
+    <div class='mt-10 mb-10 pb-10'><?php the_excerpt(); ?></div>
     <div class='post_paws'>
       <span><img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/paw_v001.png" alt="tiny dogs paw" class='scale_rotate_paw'></span>
     </div>
@@ -93,9 +93,9 @@
          <h1 class='mt-5 font-bold'>WHAT WE OFFER</h1>
          <div class="info grid lg:grid-cols-4 gap-x-2">
            <button class='transition duration-500 ease-in-out bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-5'>option 1</button>
-           <button class='transition duration-500 ease-in-out bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-5'>option 1</button>
-           <button class='transition duration-500 ease-in-out bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-5'>option 1</button>
-           <button class='transition duration-500 ease-in-out bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-5'>option 1</button>
+           <button class='transition duration-500 ease-in-out bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-5'>option 2</button>
+           <button class='transition duration-500 ease-in-out bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-5'>option 3</button>
+           <button class='transition duration-500 ease-in-out bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-5'>option 4</button>
          </div>
           <h3 class='text-xs mt-5'>THE MOBILE GROOM ROOM - A boutique mobile grooming service</h3>
        </div>
