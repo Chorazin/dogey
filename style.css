@@ -269,19 +269,25 @@ hr {
 .font_adjust {
     font-family: bright_sunshine;
     color: var(--dogey_orange);
+    background-image: url('./assets/src/imgs/dogey_v001.jpg');
+    background-position: right; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  border-radius: 0 0 75px 0px;
 }
 
 .boutique {
   display: block;
   position: relative;
+    text-shadow: 3.5px 0.5px 1px rgba(0, 0, 0, 0.3);
 }
 
 .assoc_2 {
   padding-left: 150px;
+
 }
 
 .assoc_3 {
-  padding-left: 250px;
+  padding-left: 50px;
 }
 
 .circle_t {

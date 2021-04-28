@@ -79,11 +79,8 @@
       <span class='boutique assoc_1 obs hidden md:block'>A BOUTIQUE</span> <span class='boutique assoc_2 obs hidden md:block'>MOBILE</span><span class='boutique assoc_3 obs hidden md:block'>GROOMING SERVICE</span>
     </div>
     <div>
-
     </div>
   </div>
-
-  <hr />
   <!--Spacer Image -->
    <div class="grid grid-cols-1 mt-10">
      <div class="spacer_card">
