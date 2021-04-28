@@ -104,15 +104,22 @@
    </div>
  </article>
   <!-------------------------------------------------------------------------------------------------->
+  <!-- TESTIMONIALS -->
    <div class='grid lg:grid-cols-3 pt-5 pb-5 post_testimonials mt-10'>
-     <div>
-      Absolutely amazing work! Our first cut for our girls Pippa & Bella and they are beautiful! Look forward to their next appointment - Cameron Massey
+     <div class='circle_t obs'>
+       <blockquote class='circular_text'>
+         <p class='obs inner_circle'>"Absolutely amazing work! Our first cut for our girls Pippa & Bella and they are beautiful! Look forward to their next appointment" <br/><br/>- Cameron Massey</p>
+       </blockquote>
      </div>
-     <div>
-        TESTIMONIAL TWO
+     <div class='circle_t obs'>
+      <blockquote class='circular_text'>
+        <p class="obs inner_circle">TESTIMONIAL TWO</p>
+      </blockquote>
      </div>
-     <div>
-        TESTIMONIAL THREE
+     <div class='circle_t obs'>
+       <blockquote class='circular_text'>
+         <p class="obs inner_circle">TESTIMONIAL THREE</p>
+       </blockquote>
      </div>
    </div>
 

@@ -6,6 +6,7 @@ let options = {
 
 //grab what is to be observed
 const target = document.querySelectorAll('.obs');
+const circ = document.querySelectorAll('.circle_t');
 const animation_array = [0, 0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2]
 
 
@@ -15,9 +16,17 @@ observer = new IntersectionObserver((entries, options) => {
   entries.forEach((entry) => {
     let random_number = Math.floor(Math.random() * 8) + 1;
     let array_number = animation_array[random_number]
-    if(entry.intersectionRatio > 0) {
 
-      entry.target.style.animation = `fade_in_down ${array_number}s forwards ease-out`;
+    if(entry.intersectionRatio > 0) {
+      if(entry.target.classList.contains('circle_t')) {
+        entry.target.style.animation = `size_shift 0.5s forwards ease-out`;
+      }
+      else if(entry.target.classList.contains('inner_circle')) {
+        entry.target.style.animation = `size_shift_down 0.5s forwards ease-out`;
+      }
+      else {
+        entry.target.style.animation = `fade_in_down ${array_number}s forwards ease-out`;
+      }
     }
     else {
       entry.target.style.animation = 'none';

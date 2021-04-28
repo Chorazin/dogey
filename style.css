@@ -162,9 +162,11 @@ hr {
 }
 .post_testimonials {
   /*background: linear-gradient(var(--dogey_orange), var(--dark_charcoal));*/
-  background-color: var(--dogey_orange);
+  background-image: radial-gradient(farthest-corner at 40px 40px,
+      var(--dogey_orange), var(--dogey_pink));
   min-height: 300px;
   color: var(--dark_charcoal);
+  text-align: center;
 }
 .animate_card_out {
   background-color: var(--dogey_orange);
@@ -282,6 +284,48 @@ hr {
   padding-left: 250px;
 }
 
+.circle_t {
+  /*background: red;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: relative;*/
+  background: radial-gradient(
+    ellipse at center,
+    rgba(59, 59, 59, 1) 0%,
+    rgba(59, 59, 59, 1) 70%,
+    rgba(59, 59, 59, 0) 70.3%
+  );
+  height: 200px;
+  position: relative;
+  width: 200px;
+  margin:auto;
+  margin-top: 10px;
+}
+
+.animate_circle {
+  animation-name: size_shift;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+.circular_text {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  color: white;
+}
+
+.circular_text p {
+  font-size: 21px;
+  font-style: italic;
+  height: 100%;
+  line-height: 1.25;
+  padding: 0;
+  text-align: center;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+}
 
 
 /* ------------------------------------------------------------ */
@@ -298,6 +342,27 @@ hr {
     top: 0px;
 
 	}
+}
+@keyframes size_shift {
+  from {
+    transform: scale(1.0)
+  }
+
+  to {
+    transform: scale(1.2)
+  }
+}
+
+@keyframes size_shift_down {
+  from {
+    transform: scale(1.0);
+    /*margin-top: 0;*/
+  }
+
+  to {
+    transform: scale(0.5);
+    /*margin-top: -100px;*/
+  }
 }
 
 @keyframes color_transition_out {
