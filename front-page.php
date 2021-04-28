@@ -103,17 +103,17 @@
   <!-------------------------------------------------------------------------------------------------->
   <!-- TESTIMONIALS -->
    <div class='grid lg:grid-cols-3 pt-5 pb-5 post_testimonials mt-10'>
-     <div class='circle_t obs'>
+     <div class='circle_t obs mt-5'>
        <blockquote class='circular_text'>
          <p class='obs inner_circle'>"Absolutely amazing work! Our first cut for our girls Pippa & Bella and they are beautiful! Look forward to their next appointment" <br/><br/>- Cameron Massey</p>
        </blockquote>
      </div>
-     <div class='circle_t obs'>
+     <div class='circle_t obs mt-5'>
       <blockquote class='circular_text'>
         <p class="obs inner_circle">TESTIMONIAL TWO</p>
       </blockquote>
      </div>
-     <div class='circle_t obs'>
+     <div class='circle_t obs mt-5'>
        <blockquote class='circular_text'>
          <p class="obs inner_circle">TESTIMONIAL THREE</p>
        </blockquote>

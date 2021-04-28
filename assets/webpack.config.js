@@ -7,6 +7,9 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const cssnano                 = require('cssnano')
 const { CleanWebpackPlugin }  = require('clean-webpack-plugin')
 const UglifyJsPlugin          = require('uglifyjs-webpack-plugin')
+const Scrollbar               = require('smooth-scrollbar')
+
+
 
 // JS Directory path.
 const JS_DIR    = path.resolve(__dirname, 'src/js')

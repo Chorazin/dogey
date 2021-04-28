@@ -37,5 +37,8 @@
 		"uglifyjs-webpack-plugin": "^2.2.0",
 		"webpack": "^4.44.1",
 		"webpack-cli": "^3.3.12"
+	},
+	"dependencies": {
+		"smooth-scrollbar": "^8.6.1"
 	}
 }
