@@ -30,8 +30,8 @@ Thanks to Imran Sayed for the setup tips and his webpack skills
 body {
   background-color: var(--charcoal);
 }
-img {
-
+footer h1 {
+  color: var(--dogey_orange);
 }
 nav {
   width: 100%;
@@ -41,6 +41,22 @@ footer {
   background-color: var(--dark_charcoal);
   min-height: 300px;
 }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px;
+  border-style: solid;
+  border-color: white;
+  margin: 1em 0;
+  padding: 0;
+  }
+
+article {
+  background-color: var(--charcoal);
+}
+
 .main_nav ul#nav_one	{
 	list-style-type: none;
 	margin: 0;
@@ -116,9 +132,6 @@ background: linear-gradient(
   animation: fade .20s linear;
 }
 
-article {
-  background-color: var(--charcoal);
-}
 .posts {
   background-color: var(--charcoal);
   margin-top: 50px;
@@ -138,16 +151,6 @@ article {
   margin:auto;
 }
 
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px;
-  border-style: solid;
-  border-color: white;
-  margin: 1em 0;
-  padding: 0;
-  }
 
 .animate_hr {
   animation-name: hr_transition;
@@ -333,6 +336,17 @@ hr {
   text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
 }
 
+.footer_background_image {
+  background-image: url('./assets/src/imgs/footer_v001.jpg');
+  min-height: 500px;
+}
+
+.inset_center {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
 
 /* ------------------------------------------------------------ */
 /* ANIMATIONS */
