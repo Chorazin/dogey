@@ -71,8 +71,8 @@
   <br />
   <div class='grid lg:grid-cols-3 text-white'>
     <div>
-      <span class="mgr obs">THE MOBILE</span>
-      <span><img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/paw_v002.png" alt="Mobile Groom Room logo" class=''></span>
+      <span class="obs sm:mgr mgr_small">THE MOBILE</span>
+      <span><img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/paw_v002.png" alt="Mobile Groom Room logo" class='mx-auto'></span>
       <span class="mgr obs">GROOM ROOM</span>
     </div>
     <div class='lg:col-start-2 lg:col-span-2 text-5xl font_adjust'>
@@ -110,12 +110,12 @@
      </div>
      <div class='circle_t obs mt-5'>
       <blockquote class='circular_text'>
-        <p class="obs inner_circle">TESTIMONIAL TWO</p>
+        <p class="obs inner_circle">"Great service, friendly, quick and great with nail cutting ( always a traumatic experience with my dogs ) highly recommend!" <br/><br/>- Danielle Patricia</p>
       </blockquote>
      </div>
      <div class='circle_t obs mt-5'>
        <blockquote class='circular_text'>
-         <p class="obs inner_circle">TESTIMONIAL THREE</p>
+         <p class="obs inner_circle">"Emma is so friendly and made the experience for our dog Tupac very easy. We will definately be using this service Again! 5 Stars" <br/><br/>- Rachel Hain</p>
        </blockquote>
      </div>
    </div>

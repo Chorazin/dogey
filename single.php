@@ -3,11 +3,8 @@
  ?>
  <article>
   <div>
-    <h2 class="red_heading">
-      THIS IS A WEB PAGE
-    </h2>
+    <?php the_content() ?>
   </div>
-  <?php the_content() ?>
 </article>
 <?php
   get_footer();

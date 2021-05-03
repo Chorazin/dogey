@@ -13,7 +13,7 @@
 			<h1 class='text-xl font-bold mb-5'>STAY CONNECTED</h1>
 			<p>Join us on social media for sweet deals and promotions!</p>
 			<div class='mt-5 flex flex-row justify-between'>
-				<div><img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/fb_v001.png" alt="Facebook Icon"></div>
+				<div><a href="https://www.facebook.com/themobilegroomroomnsw" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/fb_v001.png" alt="Facebook Icon"></a></div>
 				<div><img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/insta_v001.png" alt="Instagram Icon"></div>
 				<div><img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/tt_v001.png" alt="TikTok Icon"></div>
 			</div>
@@ -26,9 +26,27 @@
 
 		<div>
 			<h1 class='text-xl font-bold mb-5'>NAVIGATE</h1>
+			<?php
+			wp_nav_menu(
+				array(
+					'menu' => 'main_nav_links',
+					'container' => '',
+					'theme_location' => 'primary_menu',
+					'items_wrap' => '<ul class="font-bold">%3$s</ul>'
+				)
+			); ?>
 		</div>
 		<div>
 			<h1 class='text-xl font-bold mb-5'>LOCATION</h1>
+			<div>
+				PH: 0450 676 258
+			</div>
+			<div>
+				EMAIL: themobilegroomroomnsw@gmail.com
+			</div>
+			<div>
+				Hamilton NSW - Newcastle
+			</div>
 		</div>
 	</div>
 	<div class="container inset_center">

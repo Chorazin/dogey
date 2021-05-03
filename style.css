@@ -18,8 +18,8 @@ Thanks to Imran Sayed for the setup tips and his webpack skills
 @font-face {
   font-family: bright_sunshine;
   src: url('./assets/font/Bright Sunshine Cap Demo.ttf');
-
 }
+
 
 :root {
   --charcoal: #3b3b3b;
@@ -252,6 +252,17 @@ background: linear-gradient(
   padding-left: 35px;
   color: var(--dogey_orange);
 }
+
+.mgr_small {
+  position: relative;
+  color: var(--dogey_orange);
+  font-family: bright_sunshine;
+  font-size: 2rem;
+  opacity: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 0px;
+}
 .obs {
   /*specifically for the intersection observer*/
 }
@@ -348,6 +359,14 @@ background: linear-gradient(
   transform: translate(-50%, -100%);
 }
 
+.single_page {
+  min-height: 800px;
+  color: var(--dogey_orange);
+}
+
+.page_title {
+  text-transform: uppercase;
+}
 /* ------------------------------------------------------------ */
 /* ANIMATIONS */
 @keyframes fade_in_down {

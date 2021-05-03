@@ -1,17 +1,18 @@
 <?php
   get_header();
  ?>
- <article>
-  <div>
-    <h2 class="text-8xl">
-      Main Content on single pages
-    </h2>
+ <article class='single_page container mx-auto mt-10'>
+  <div class=''>
+    <img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/page_header_v001.jpg" alt="" class='mx-auto'>
+    <h2 class='page_title text-4xl'><?php wp_title(); ?></h2><br/><br/>
+    <div></div>
+    <!---------------------------------------------------------------------------------------------------->
+  	<?php
+      the_content();
+    ?>
+    <!---------------------------------------------------------------------------------------------------->
   </div>
-  <!---------------------------------------------------------------------------------------------------->
-	<?php
-    the_content();
-  ?>
-  <!---------------------------------------------------------------------------------------------------->
+
 </article>
 <?php
   get_footer();
