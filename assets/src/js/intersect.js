@@ -29,7 +29,7 @@ observer = new IntersectionObserver((entries, options) => {
       }
     }
     else {
-      entry.target.style.animation = 'none';
+    
     }
   })
 

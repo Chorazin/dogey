@@ -69,51 +69,34 @@
 
   <hr />
   <br />
-  <div class='grid lg:grid-cols-3 text-white'>
+  <div class='grid lg:grid-cols-3 text-white mt-20 mb-20 pt-10 pb-10'>
     <div>
-      <span class="obs sm:mgr mgr_small">THE MOBILE</span>
+      <span class="obs relative flex justify-around mgr">THE MOBILE</span>
       <span><img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/paw_v002.png" alt="Mobile Groom Room logo" class='mx-auto'></span>
-      <span class="mgr obs">GROOM ROOM</span>
+      <span class="obs relative flex justify-around mgr">GROOM ROOM</span>
     </div>
     <div class='lg:col-start-2 lg:col-span-2 text-5xl font_adjust'>
-      <span class='boutique assoc_1 obs hidden md:block'>A BOUTIQUE</span> <span class='boutique assoc_2 obs hidden md:block'>MOBILE</span><span class='boutique assoc_3 obs hidden md:block'>GROOMING SERVICE</span>
+      <span class='boutique assoc_1 obs hidden xl:block'>A BOUTIQUE</span> <span class='boutique assoc_2 obs hidden xl:block'>MOBILE</span><span class='boutique assoc_3 obs hidden xl:block'>GROOMING SERVICE</span>
     </div>
     <div>
     </div>
   </div>
-  <!--Spacer Image -->
-   <div class="grid grid-cols-1 mt-10">
-     <div class="spacer_card">
-       <div class="paw text-white">
-         <div class="circle"></div>
-         <img src="<?php bloginfo('template_url'); ?>/assets/src/imgs/paw_v001.png" alt="animated dogs paw">
-         <h1 class='mt-5 font-bold'>WHAT WE OFFER</h1>
-         <div class="info grid lg:grid-cols-4 gap-x-2">
-           <button class='transition duration-500 ease-in-out bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-5'>option 1</button>
-           <button class='transition duration-500 ease-in-out bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-5'>option 2</button>
-           <button class='transition duration-500 ease-in-out bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-5'>option 3</button>
-           <button class='transition duration-500 ease-in-out bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-5'>option 4</button>
-         </div>
-          <h3 class='text-xs mt-5'>THE MOBILE GROOM ROOM - A boutique mobile grooming service</h3>
-       </div>
 
-     </div>
-   </div>
  </article>
   <!-------------------------------------------------------------------------------------------------->
   <!-- TESTIMONIALS -->
    <div class='grid lg:grid-cols-3 pt-5 pb-5 post_testimonials mt-10'>
-     <div class='circle_t obs mt-5'>
+     <div class='circle_t obs mt-5 mb-10'>
        <blockquote class='circular_text'>
          <p class='obs inner_circle'>"Absolutely amazing work! Our first cut for our girls Pippa & Bella and they are beautiful! Look forward to their next appointment" <br/><br/>- Cameron Massey</p>
        </blockquote>
      </div>
-     <div class='circle_t obs mt-5'>
+     <div class='circle_t obs mt-5 mb-10'>
       <blockquote class='circular_text'>
         <p class="obs inner_circle">"Great service, friendly, quick and great with nail cutting ( always a traumatic experience with my dogs ) highly recommend!" <br/><br/>- Danielle Patricia</p>
       </blockquote>
      </div>
-     <div class='circle_t obs mt-5'>
+     <div class='circle_t obs mt-5 mb-10'>
        <blockquote class='circular_text'>
          <p class="obs inner_circle">"Emma is so friendly and made the experience for our dog Tupac very easy. We will definately be using this service Again! 5 Stars" <br/><br/>- Rachel Hain</p>
        </blockquote>
