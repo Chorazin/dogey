@@ -29,7 +29,9 @@ observer = new IntersectionObserver((entries, options) => {
       }
     }
     else {
-    
+      // causing a lot of repeat animation issues when animations are partly on screen and go out of intersection observer scope thus resetting over and over
+      // so turing off the animation reset for when the observed target goes off and on screen
+      // entry.target.style.animation = 'none';
     }
   })
 

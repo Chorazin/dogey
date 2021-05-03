@@ -57,6 +57,19 @@ article {
   background-color: var(--charcoal);
 }
 
+#mobile_menu {
+  position: absolute;
+  left: 0px;
+  background-color: var(--charcoal);
+  height: 600px;
+  width: 600px;
+}
+
+#second_nav {
+  opacity: 1;
+  animation: fade .20s linear;
+}
+
 .main_nav ul#nav_one	{
 	list-style-type: none;
 	margin: 0;
@@ -122,16 +135,6 @@ background: linear-gradient(
   );
 }
 
-#mobile_menu {
-  position: absolute;
-  left: 0px;
-  background-color: var(--charcoal);
-}
-
-#second_nav {
-  opacity: 1;
-  animation: fade .20s linear;
-}
 
 .posts {
   background-color: var(--charcoal);

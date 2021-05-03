@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css" type="text/css" media="screen" />
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src="<?php bloginfo('template_url'); ?>/assets/src/js/get_permalink.js"></script>
-	
+
 	<?php wp_head(); ?>
 	<script type="text/javascript">
 		const template_url = '<?= get_bloginfo("template_url"); ?>';
@@ -48,7 +48,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 					)
 				);
 			?>
-			<div id='second_nav' class='mobile_res '>
+			<div id='second_nav' class='mobile_res text-3xl'>
 				<!-- hidden menu on large screens to popup once hamburger is clicked -->
 				<?php
 					//set up nav menu, see functions.php for details
