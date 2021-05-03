@@ -45,13 +45,13 @@
 				EMAIL: <a href="mailto:themobilegroomroomnsw@gmail.com">themobilegroomroomnsw@gmail.com</a>
 			</div>
 			<div>
-				Hamilton NSW - Newcastle
+				Newcastle - NSW
 			</div>
 		</div>
 	</div>
 	<div class="container inset_center">
 		<hr />
-		<div class='text-xs flex justify-around'>THE MOBILE GROOM ROOM - &copy; 2021 HAMILTON - NSW PH:0450676258 EMAIL:themobilegroomroomnsw@gmail.com</div>
+		<div class='text-xs flex justify-around'>THE MOBILE GROOM ROOM - &copy; 2021 NEWCASTLE - NSW PH: 0450 676 258 EMAIL: themobilegroomroomnsw@gmail.com</div>
 		<hr/>
 	</div>
 </footer>

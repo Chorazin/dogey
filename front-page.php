@@ -85,7 +85,7 @@
  </article>
   <!-------------------------------------------------------------------------------------------------->
   <!-- TESTIMONIALS -->
-   <div class='grid lg:grid-cols-3 pt-5 pb-5 post_testimonials mt-10'>
+   <div class='grid lg:grid-cols-3 pt-40 post_testimonials mt-10 pb-40'>
      <div class='circle_t obs mt-5 mb-10'>
        <blockquote class='circular_text'>
          <p class='obs inner_circle'>"Absolutely amazing work! Our first cut for our girls Pippa & Bella and they are beautiful! Look forward to their next appointment" <br/><br/>- Cameron Massey</p>
